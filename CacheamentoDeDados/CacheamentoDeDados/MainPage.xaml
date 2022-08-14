@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CacheamentoDeDados.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Padding="15">
+
+    <StackLayout>
+        <Frame
+            Padding="24"
+            BackgroundColor="#2196F3"
+            CornerRadius="0">
+            <Label
+                FontSize="36"
+                HorizontalTextAlignment="Center"
+                Text="Cache De Dados"
+                TextColor="White" />
+        </Frame>
+
+        <Label
+            FontAttributes="Bold"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            Text="Cadastro" />
+
+        <Entry
+            x:Name="EtrNome"
+            ClearButtonVisibility="WhileEditing"
+            MaxLength="40"
+            Placeholder="Nome"
+            PlaceholderColor="White"
+            TextColor="White" />
+
+        <Entry
+            x:Name="EtrEmail"
+            ClearButtonVisibility="WhileEditing"
+            MaxLength="80"
+            Placeholder="Email"
+            PlaceholderColor="White"
+            TextColor="White" />
+
+        <Entry
+            x:Name="EtrSenha"
+            ClearButtonVisibility="WhileEditing"
+            MaxLength="20"
+            Placeholder="Senha"
+            PlaceholderColor="White"
+            TextColor="White" />
+
+        <Entry
+            x:Name="EtrSenhaConfirmacao"
+            ClearButtonVisibility="WhileEditing"
+            MaxLength="20"
+            Placeholder="Confirme Sua Senha"
+            PlaceholderColor="White"
+            TextColor="White" />
+
+        <Button
+            Margin="15"
+            BackgroundColor="DarkSeaGreen"
+            Clicked="CadastrarUsuario"
+            CornerRadius="8"
+            FontSize="Medium"
+            Text="Cadastrar-se"
+            TextColor="White" />
+
+    </StackLayout>
+
+</ContentPage>
