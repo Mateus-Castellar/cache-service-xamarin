@@ -17,6 +17,8 @@ namespace CacheamentoDeDados
             {
                 await DisplayAlert("Atenção",
                     "Todos os campos devem ser preenchido", "Fechar");
+
+                return;
             }
 
             var cacheamentoService = new CacheamentoService();
